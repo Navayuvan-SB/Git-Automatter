@@ -17,8 +17,8 @@ def add():
 # Git commit command
 def commit(message):
 
-    commit = "git commit -m " + message + " ."
-    os.system(commit)
+    commit = "git commit -m \"" + message + "\" ."
+    os.system(commit) 
 
 # Git push command
 def push(branch):
