@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+# (For Command line Execution)
+""" ==================================================
+                    Git Automater 
+=================================================== """
+
+# Import statements
+import click
+import os
+
+# Git add command
+def add():
+
+    add = "git add ."
+    os.system(add)
+
+# Git commit command
+def commit(message):
+
+    commit = "git commit -m " + message + " ."
+    os.system(commit)
+
+# Git push command
+def push(branch):
+    
+    push = "git push -u origin " + branch
+    os.system(push)
+
+# Click block
+@click.command()
+@click.option(
+    '--message',
+    '-m',
+    required=True,
+    type=str,
+    help="Specify the commit message in this option"
+)
+@click.option(
+    '--branch',
+    '-b',
+    help="Specify the branch name, If any particular branch is targetted",
+    default="master"
+)
+# Main method
+def main(message, branch):
+
+    # Call Add method
+    add()
+
+    # Call commit method
+    commit(message)
+
+    # Call push method
+    push(branch)
+
+if __name__=="__main__":
+    main()
