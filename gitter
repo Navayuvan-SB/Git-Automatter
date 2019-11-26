@@ -45,13 +45,19 @@ def push(branch):
 def main(message, branch):
 
     # Call Add method
+    print("\nAdding files to stagging area...")
     add()
+    print("Files added successfully...\n")
 
     # Call commit method
+    print("Commiting files with message " + message + "...")
     commit(message)
+    print("Files commited successfully...\n")
 
     # Call push method
+    print("Pushing files in " + branch + " branch...")
     push(branch)
+    print("Files pushed successfully...")
 
 if __name__=="__main__":
     main()
