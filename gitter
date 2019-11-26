@@ -56,7 +56,7 @@ def main(message, branch):
 
     # Call push method
     print("Pushing files in " + branch + " branch...")
-    push(branch)
+    push(branch) 
     print("Files pushed successfully...")
 
 if __name__=="__main__":
