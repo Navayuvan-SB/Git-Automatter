@@ -18,12 +18,12 @@ def setup():
 
     # Make Git automatter file as executable
     print("Giving execute permision to user...")
-    os.system('chmod +x gitter')
+    os.system('chmod +x gitah')
     print("Permisson granted successfully...\n")
 
     # Move the log file to /bin
-    print("Adding 'gitter' command to your terminal...")
-    os.system('sudo cp gitter /bin')
+    print("Adding 'gitah' command to your terminal...")
+    os.system('sudo cp gitah /bin')
     print("Command added successfully...\n")
     
 
@@ -32,7 +32,7 @@ def setup():
     Hurray...! The installation was completed successfully :)
     Close this Installation window and open a new one to use Git Automatter
 
-    Run 'gitter --help' to read the user manual.
+    Run 'gitah --help' to read the user manual.
     """)
 
 # Print conformation prompt

@@ -15,7 +15,7 @@ $: python3 setup.py
 
 ## How should I use this Application?
 
-    Usage: gitter [OPTIONS]
+    Usage: gitah [OPTIONS]
 
     Options:
     -m, --message TEXT  Specify the commit message in this option  [required]
